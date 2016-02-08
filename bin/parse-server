@@ -12,7 +12,7 @@ if (process.env.PARSE_SERVER_OPTIONS) {
 } else {
 
 	options.databaseURI = process.env.PARSE_SERVER_DATABASE_URI;
-	options.cloud = process.env.PARSE_SERVER_CLOUD_CODE_MAIN;
+	options.cloud = process.env.PARSE_SERVER_CLOUD_CODE_MAIN || __dirname + '/cloud/main.js';
 	options.collectionPrefix = process.env.PARSE_SERVER_COLLECTION_PREFIX;
 
 	// Keys and App ID
