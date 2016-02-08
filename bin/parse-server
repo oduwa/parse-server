@@ -33,7 +33,7 @@ if (process.env.PARSE_SERVER_OPTIONS) {
 	}
 }
 console.log('xxxxxxxxx');
-var mountPath = process.env.PARSE_SERVER_MOUNT_PATH || "/";
+var mountPath = process.env.PARSE_SERVER_MOUNT_PATH || "/parse";
 var api = new ParseServer(options);
 app.use(mountPath, api);
 
