@@ -32,7 +32,7 @@ if (process.env.PARSE_SERVER_OPTIONS) {
 		options.facebookAppIds = facebookAppIds;
 	}
 }
-
+console.log('xxxxxxxxx');
 var mountPath = process.env.PARSE_SERVER_MOUNT_PATH || "/";
 var api = new ParseServer(options);
 app.use(mountPath, api);
